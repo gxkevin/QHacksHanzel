@@ -6,6 +6,7 @@
 //  Copyright © 2016 Raymond Chung. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 import MapKit
 
@@ -15,10 +16,9 @@ class eventViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var location = CLLocationCoordinate2DMake(40.728224, -73.794852)
-        var span = MKCoordinateSpanMake(0.2
-            , 0.2)
-        var region = MKCoordinateRegion(center: location, span: span)
+        let location = CLLocationCoordinate2DMake(40.728224, -73.794852)
+        let span = MKCoordinateSpanMake(0.2, 0.2)
+        let region = MKCoordinateRegion(center: location, span: span)
         
         MapView.setRegion(region, animated: true)
     }
