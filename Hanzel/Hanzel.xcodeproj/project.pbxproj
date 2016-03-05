@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45221741C8B3E8B004C9072 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45221731C8B3E8B004C9072 /* TrackViewController.swift */; };
+		C45221761C8B40A0004C9072 /* brosweViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45221751C8B40A0004C9072 /* brosweViewController.swift */; };
 		EF4C9B3A1C8AC79300C089E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C9B391C8AC79300C089E5 /* AppDelegate.swift */; };
 		EF4C9B3C1C8AC79300C089E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C9B3B1C8AC79300C089E5 /* ViewController.swift */; };
 		EF4C9B3F1C8AC79300C089E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4C9B3D1C8AC79300C089E5 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C45221731C8B3E8B004C9072 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		C45221751C8B40A0004C9072 /* brosweViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = brosweViewController.swift; path = ../brosweViewController.swift; sourceTree = "<group>"; };
 		EF4C9B361C8AC79300C089E5 /* Hanzel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hanzel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4C9B391C8AC79300C089E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4C9B3B1C8AC79300C089E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +101,14 @@
 		EF4C9B381C8AC79300C089E5 /* Hanzel */ = {
 			isa = PBXGroup;
 			children = (
+				C45221751C8B40A0004C9072 /* brosweViewController.swift */,
 				EF4C9B391C8AC79300C089E5 /* AppDelegate.swift */,
 				EF4C9B3B1C8AC79300C089E5 /* ViewController.swift */,
 				EF4C9B3D1C8AC79300C089E5 /* Main.storyboard */,
 				EF4C9B401C8AC79300C089E5 /* Assets.xcassets */,
 				EF4C9B421C8AC79300C089E5 /* LaunchScreen.storyboard */,
 				EF4C9B451C8AC79300C089E5 /* Info.plist */,
+				C45221731C8B3E8B004C9072 /* TrackViewController.swift */,
 			);
 			path = Hanzel;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4C9B3C1C8AC79300C089E5 /* ViewController.swift in Sources */,
+				C45221741C8B3E8B004C9072 /* TrackViewController.swift in Sources */,
+				C45221761C8B40A0004C9072 /* brosweViewController.swift in Sources */,
 				EF4C9B3A1C8AC79300C089E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				EF4C9B601C8AC79300C089E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF4C9B611C8AC79300C089E5 /* Build configuration list for PBXNativeTarget "HanzelTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				EF4C9B631C8AC79300C089E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF4C9B641C8AC79300C089E5 /* Build configuration list for PBXNativeTarget "HanzelUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				EF4C9B661C8AC79300C089E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

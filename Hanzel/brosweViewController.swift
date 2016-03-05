@@ -1,27 +1,26 @@
 //
-//  ViewController.swift
+//  brosweViewController.swift
 //  Hanzel
 //
-//  Created by Raymond Chung on 2016-03-05.
+//  Created by Jerry Mak on 2016-03-05.
 //  Copyright © 2016 Raymond Chung. All rights reserved.
 //
 
+import Foundation
+
 import UIKit
 
-class ViewController: UIViewController {
-
-    
+class browseViewController: UIViewController {
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
-
