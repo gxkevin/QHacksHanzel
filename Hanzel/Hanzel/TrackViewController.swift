@@ -12,6 +12,7 @@ class TrackViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var timeLabel: UILabel!
     override func viewDidLoad() {
+
         super.viewDidLoad()
         timeLabel.text = "\(2)"
         // Do any additional setup after loading the view, typically from a nib.

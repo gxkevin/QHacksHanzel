@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MhO-cS-5nN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6u3-vC-o4n">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-2u-qu5">
@@ -37,18 +37,29 @@
                                     <segue destination="j6X-nv-Gil" kind="show" id="NI8-qh-aa2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanzel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-BQ-Gyq">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="174" y="55" width="53" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="7IE-2u-qu5"/>
                                 <exclude reference="eul-ay-4mm"/>
+                                <exclude reference="K6I-BQ-Gyq"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="7IE-2u-qu5"/>
                                 <include reference="eul-ay-4mm"/>
+                                <include reference="K6I-BQ-Gyq"/>
                             </mask>
                         </variation>
                     </view>
@@ -83,13 +94,108 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="5xf-Bx-wFD"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDo-3S-GFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-S4-TuW">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="177" y="356" width="46" height="30"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="OOB-S4-TuW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="58" width="400" height="742"/>
+                                    <mask key="subviews">
+                                        <include reference="OOB-S4-TuW"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tDo-3S-GFQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tDo-3S-GFQ"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ScrollView" destination="tDo-3S-GFQ" id="e90-sE-0XM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4q-eD-7gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="558" y="1176"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="QDc-E3-N9r">
+            <objects>
+                <viewController id="Qf3-tE-KrL" customClass="eventViewController" customModule="Hanzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hPh-Bz-yjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="iF2-6k-ges"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5KT-o8-x4g">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNZ-iZ-iQH">
+                                <rect key="frame" x="0.0" y="20" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="j6X-nv-Gil" kind="show" id="26A-gk-WN0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVP-8H-als">
+                                <rect key="frame" x="38" y="24" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="24" width="100" height="21"/>
+                                </variation>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tT4-Xa-7GS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="87" width="344" height="300"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rNZ-iZ-iQH"/>
+                                <exclude reference="NVP-8H-als"/>
+                                <exclude reference="tT4-Xa-7GS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rNZ-iZ-iQH"/>
+                                <include reference="NVP-8H-als"/>
+                                <include reference="tT4-Xa-7GS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvN-11-6km" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="1176"/>
         </scene>
         <!--Track View Controller-->
         <scene sceneID="ywL-zN-7sY">
@@ -193,6 +299,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WeZ-DE-yLZ"/>
+        <segue reference="26A-gk-WN0"/>
+        <segue reference="5xf-Bx-wFD"/>
     </inferredMetricsTieBreakers>
 </document>
