@@ -21,7 +21,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.LocationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.LocationManager.requestWhenInUseAuthorization()
         self.LocationManager.startUpdatingLocation()
-        self.MapView.showsUserLocation = true
+        //self.MapView.showsUserLocation = true
     }
     
     override func didReceiveMemoryWarning() {
