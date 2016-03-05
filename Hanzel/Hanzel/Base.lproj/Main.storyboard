@@ -21,7 +21,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Track Event"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="160" y="208" width="81" height="30"/>
+                                    <rect key="frame" x="160" y="151" width="81" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="WeU-IC-CcV" kind="show" id="y5H-PQ-TLn"/>
@@ -29,9 +29,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eul-ay-4mm">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="History"/>
+                                <state key="normal" title="Events Tracked"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="175" y="346" width="50" height="30"/>
+                                    <rect key="frame" x="148" y="270" width="105" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="j6X-nv-Gil" kind="show" id="NI8-qh-aa2"/>
