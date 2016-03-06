@@ -38,7 +38,7 @@ body {
 .download-section {
     padding-top: 100px;
     text-align: center;
-    background: #f1f1f1;
+    background: #fff;
     padding-bottom: 80px;
 }
 
@@ -143,6 +143,102 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
     border-color: #1b8bbf;
     background-color: #1b8bbf;
+}
+
+/* 2. Navigation */
+a.navbar-brand.page-scroll {
+	font-family: "Montserrat-bold", sans-serif;
+	font-size: 30px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar.top-nav-collapse a.navbar-brand.page-scroll {
+	color: #1ebedf;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar.top-nav-collapse {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #1ebedf;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #fff !important;
+	background-color: #1ebedf;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar.top-nav-collapse .navbar-nav>li>a {
+	color: #1ebedf;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	margin-top: -12px;
+}
+
+a:hover.navbar-brand.page-scroll {
+	color: #eee;
+}
+
+/* Mobile Devices only */
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.logobefore {
+	background-image: url("../img/logo-01.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 180px;
+	height: 60px;
+}
+
+.logoafter {
+	background-image: url("../img/logo.png") !important;
+}
+
+@media(max-width: 600px) {
+	.logobefore {
+		width: 160px;
+		height: 48px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #1ebedf;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		background-color: #fff;
+	}
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -ms-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -o-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
 }
 
 div#homeSpacing {
