@@ -16,6 +16,7 @@
 		A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */; };
 		A3BBD77D1C05181600DD0DB0 /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */; };
 		EF6BD1071C8BEFAE0020533A /* hanzel.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6BD1061C8BEFAE0020533A /* hanzel.png */; };
+		EFF5E1EC1C8C554D00957058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5E1EB1C8C554D00957058 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
 		EF6BD1061C8BEFAE0020533A /* hanzel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanzel.png; sourceTree = "<group>"; };
+		EFF5E1EB1C8C554D00957058 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		A2D9CBC01943C2540017F096 /* HanzelBE */ = {
 			isa = PBXGroup;
 			children = (
+				EFF5E1EB1C8C554D00957058 /* ViewController.swift */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
 				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF5E1EC1C8C554D00957058 /* ViewController.swift in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,

@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="2149.5" y="168.5"/>
         </scene>
-        <!--Add Item-->
+        <!--Add Log-->
         <scene sceneID="RI1-O5-vZS">
             <objects>
                 <viewController id="jv0-OX-F4r" customClass="ToDoItemViewController" customModule="HanzelBE" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,11 +74,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pO-Tr-BjV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Log" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pO-Tr-BjV">
                                 <rect key="frame" x="16" y="84" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iK-8V-2wu">
+                                <rect key="frame" x="101" y="153" width="173" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="VIEW MAP">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mad-Ey-ucn" kind="modal" id="MJr-Uw-Zt7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -87,7 +97,7 @@
                             <constraint firstItem="3pO-Tr-BjV" firstAttribute="top" secondItem="eKr-eJ-C44" secondAttribute="bottom" constant="20" id="q97-kG-10R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Item" id="f2a-w1-PKf">
+                    <navigationItem key="navigationItem" title="Add Log" id="f2a-w1-PKf">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="U5u-jY-2G5">
                             <connections>
                                 <action selector="cancelPressed:" destination="jv0-OX-F4r" id="yuR-dZ-UOt"/>
@@ -108,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmN-xB-6h2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="168"/>
+            <point key="canvasLocation" x="2885.5" y="167.5"/>
         </scene>
         <!--Azure Mobile Services-->
         <scene sceneID="yNt-7v-plj">
@@ -135,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1359.375" y="168.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign in-->
         <scene sceneID="ZCG-Jm-y5z">
             <objects>
-                <viewController id="DFK-qI-AbJ" sceneMemberID="viewController">
+                <viewController title="Sign in" id="DFK-qI-AbJ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fnn-Jp-Nc2"/>
                         <viewControllerLayoutGuide type="bottom" id="It6-ai-e95"/>
@@ -192,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="270.5" y="161.5"/>
         </scene>
-        <!--View Controller-->
+        <!--MainMenu-->
         <scene sceneID="Rwp-NN-mki">
             <objects>
-                <viewController id="K8l-fi-fk3" sceneMemberID="viewController">
+                <viewController title="MainMenu" id="K8l-fi-fk3" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0mh-zP-cUR"/>
                         <viewControllerLayoutGuide type="bottom" id="7cM-uY-RBY"/>
@@ -235,6 +245,17 @@
                                     <segue destination="DFK-qI-AbJ" kind="modal" id="zh2-El-grm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXM-Tz-r44">
+                                <rect key="frame" x="105" y="452" width="165" height="48"/>
+                                <color key="backgroundColor" red="0.068489800010000004" green="0.85478766029999997" blue="0.21965670309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="VIEW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mad-Ey-ucn" kind="modal" id="TTy-3z-nuK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -244,12 +265,44 @@
             </objects>
             <point key="canvasLocation" x="814.5" y="161.5"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="vxN-jZ-JY6">
+            <objects>
+                <viewController title="Map" id="Mad-Ey-ucn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H83-QF-hjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBL-Hc-JF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgQ-Kq-zKx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RVf-FA-oQk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="595"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhQ-bU-UKZ">
+                                <rect key="frame" x="20" y="631" width="58" height="30"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="K8l-fi-fk3" kind="modal" id="hBJ-Xb-KcM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zt-As-ps9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774.5" y="1170.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hanzel.png" width="224" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="w08-7k-9vW"/>
-        <segue reference="9pk-KA-Ela"/>
+        <segue reference="SPE-pK-6GL"/>
+        <segue reference="hBJ-Xb-KcM"/>
+        <segue reference="MJr-Uw-Zt7"/>
     </inferredMetricsTieBreakers>
 </document>
