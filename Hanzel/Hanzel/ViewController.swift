@@ -22,6 +22,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.LocationManager.requestWhenInUseAuthorization()
         self.LocationManager.startUpdatingLocation()
         //self.MapView.showsUserLocation = true
+        
     }
     
     override func didReceiveMemoryWarning() {

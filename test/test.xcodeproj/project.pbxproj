@@ -14,6 +14,9 @@
 		EF3F5DE71C8B787800FEDF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3F5DE51C8B787800FEDF4D /* LaunchScreen.storyboard */; };
 		EF3F5DF21C8B787800FEDF4D /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F5DF11C8B787800FEDF4D /* testTests.swift */; };
 		EF3F5DFD1C8B787800FEDF4D /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F5DFC1C8B787800FEDF4D /* testUITests.swift */; };
+		EF3F5E0B1C8BB2A300FEDF4D /* SwiftData.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3F5E0A1C8BB2A300FEDF4D /* SwiftData.swift */; settings = {ATTRIBUTES = (Required, ); }; };
+		EF3F5E0D1C8BB2F700FEDF4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3F5E0C1C8BB2F700FEDF4D /* MapKit.framework */; };
+		EF3F5E151C8BBD8F00FEDF4D /* hanzel.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3F5E141C8BBD8F00FEDF4D /* hanzel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		EF3F5DF81C8B787800FEDF4D /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3F5DFC1C8B787800FEDF4D /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		EF3F5DFE1C8B787800FEDF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3F5E0A1C8BB2A300FEDF4D /* SwiftData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftData.swift; path = test/SwiftData.swift; sourceTree = "<group>"; };
+		EF3F5E0C1C8BB2F700FEDF4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF3F5E141C8BBD8F00FEDF4D /* hanzel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hanzel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3F5E0D1C8BB2F700FEDF4D /* MapKit.framework in Frameworks */,
+				EF3F5E0B1C8BB2A300FEDF4D /* SwiftData.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,8 @@
 		EF3F5DD01C8B787800FEDF4D = {
 			isa = PBXGroup;
 			children = (
+				EF3F5E0C1C8BB2F700FEDF4D /* MapKit.framework */,
+				EF3F5E0A1C8BB2A300FEDF4D /* SwiftData.swift */,
 				EF3F5DDB1C8B787800FEDF4D /* test */,
 				EF3F5DF01C8B787800FEDF4D /* testTests */,
 				EF3F5DFB1C8B787800FEDF4D /* testUITests */,
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EF3F5DDC1C8B787800FEDF4D /* AppDelegate.swift */,
+				EF3F5E141C8BBD8F00FEDF4D /* hanzel.png */,
 				EF3F5DDE1C8B787800FEDF4D /* ViewController.swift */,
 				EF3F5DE01C8B787800FEDF4D /* Main.storyboard */,
 				EF3F5DE31C8B787800FEDF4D /* Assets.xcassets */,
@@ -193,6 +204,11 @@
 				TargetAttributes = {
 					EF3F5DD81C8B787800FEDF4D = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EF3F5DEC1C8B787800FEDF4D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -232,6 +248,7 @@
 				EF3F5DE71C8B787800FEDF4D /* LaunchScreen.storyboard in Resources */,
 				EF3F5DE41C8B787800FEDF4D /* Assets.xcassets in Resources */,
 				EF3F5DE21C8B787800FEDF4D /* Main.storyboard in Resources */,
+				EF3F5E151C8BBD8F00FEDF4D /* hanzel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rayo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,6 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Rayo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +501,7 @@
 				EF3F5E031C8B787800FEDF4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF3F5E041C8B787800FEDF4D /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +510,7 @@
 				EF3F5E061C8B787800FEDF4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF3F5E071C8B787800FEDF4D /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +519,7 @@
 				EF3F5E091C8B787800FEDF4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

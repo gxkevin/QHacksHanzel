@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="447.75"/>
+            <point key="canvasLocation" x="416" y="497"/>
         </scene>
         <!--Browse View Controller-->
         <scene sceneID="q7q-Cf-bXV">
@@ -105,7 +105,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NFd-lC-xfP" id="nG8-Nl-LMs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -184,13 +184,21 @@
                                 </variation>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tT4-Xa-7GS">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="-193" y="-144" width="793" height="744"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="793" id="1Il-Dr-tsO"/>
+                                    <constraint firstAttribute="height" constant="744" id="BOo-gK-Pc0"/>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="28" y="87" width="344" height="300"/>
                                 </variation>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tT4-Xa-7GS" firstAttribute="bottom" secondItem="iF2-6k-ges" secondAttribute="top" id="Nj6-ej-8dE"/>
+                            <constraint firstAttribute="trailing" secondItem="tT4-Xa-7GS" secondAttribute="trailing" id="gcn-vg-2eQ"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rNZ-iZ-iQH"/>
@@ -313,7 +321,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="26A-gk-WN0"/>
+        <segue reference="NI8-qh-aa2"/>
         <segue reference="5xf-Bx-wFD"/>
     </inferredMetricsTieBreakers>
 </document>
